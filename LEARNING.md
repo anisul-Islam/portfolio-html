@@ -31,8 +31,13 @@
    - non-semantic tag - div, span
 
 10. Text formatting tags
-11. List
-12. Link
-13. Table
-14. Form
-15. Deploy
+11. Entity
+12. List
+    - ordered list, unordered, definition, nested
+13. Link and Navigation
+    - absolut link vs relative link
+    - a tag, attributes: href, target, title
+14. Image
+15. Basic Table
+16. Basic Form
+17. Deploy
