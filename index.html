@@ -3,122 +3,261 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="anisul islam" />
+    <meta name="keywords" content="portfolio, html, anisul islam" />
+    <meta
+      name="description"
+      content="Anisul Islam is a software developer..."
+    />
     <title>My Portfolio</title>
+
+    <!-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: rgb(217, 215, 213);
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
   </head>
   <body>
     <!--Section: navbar -->
-    <nav>
-      <ul>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#skills">My Skills</a>
-        </li>
-        <li>
-          <a href="#projects">My Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!--Section: intro -->
-    <header id="intro">
-      <h1>Anisul Islam</h1>
-      <p><em>Web developer and Lecturer of Computer Sceience</em></p>
-      <a href="https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg">
-        <img src="./images/anis.jpeg" alt="Anisul Islam" height="150" />
-      </a>
-
-      <hr />
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#skills">My Skills</a>
+          </li>
+          <li>
+            <a href="#projects">My Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <!--Section: about me -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p><strong>Experience:</strong> 5 years expercince in web development</p>
-      <p>
-        <strong>Education:</strong> Master's in Software, Web and cloud
-        computing
-      </p>
-    </section>
+    <main>
+      <!--Section: intro -->
+      <section id="intro">
+        <h1>Anisul Islam</h1>
+        <p><em>Web developer and Lecturer of Computer Sceience</em></p>
+        <a href="https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg">
+          <img src="./images/anis.jpeg" alt="Anisul Islam" height="150" />
+        </a>
 
-    <!--Section: Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
+        <hr />
+      </section>
 
-      <table border="1" cellpadding="5" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Technology</th>
-            <th>Proficiency</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Expert</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Expert</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Intermediate</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!--Section: about me -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          <strong>Experience:</strong> 5 years expercince in web development
+        </p>
+        <p>
+          <strong>Education:</strong> Master's in Software, Web and cloud
+          computing
+        </p>
+      </section>
 
-    <!--Section: Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <ol>
-        <li>
-          <a
-            target="_blank"
-            href="https://github.com/anisul-Islam/portfolio-html"
-            >portfolio website</a
-          >
-        </li>
-        <li>Blog website</li>
-        <li>E-commerce website</li>
-      </ol>
-    </section>
+      <!--Section: Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
 
-    <!--Section: Contacts -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td rowspan="2">Expert</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
+
         <div>
-          <label for="name">Name : </label>
-          <input type="text" id="name" name="name" required />
+          <h3>Skill Progress</h3>
+          <div>
+            <label for="htmlProgress">HTML: </label>
+            <progress id="htmlProgress" value="90" max="100">90%</progress>
+          </div>
+          <div>
+            <label for="cssProgress">CSS: </label>
+            <progress id="cssProgress" value="85" max="100">85%</progress>
+          </div>
+          <div>
+            <label for="jsProgress">Javascript: </label>
+            <progress id="jsProgress" value="75" max="100">75%</progress>
+          </div>
         </div>
 
         <div>
-          <label for="email">Email : </label>
-          <input type="email" id="email" name="email" required />
+          <h3>Experience Level</h3>
+          <label for="experienceLevel">Experience: </label>
+          <meter id="experienceLevel" min="0" max="10" value="5">5 years</meter>
         </div>
+      </section>
 
-        <div>
-          <label for="message">Meassage : </label>
-          <textarea name="message" id="message" cols="20" rows="10"></textarea>
-        </div>
+      <!--Section: Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/anisul-Islam/portfolio-html"
+              >portfolio website</a
+            >
+          </li>
+          <li>Blog website</li>
+          <li>E-commerce website</li>
+        </ol>
+      </section>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-      </form>
-    </section>
+      <video width="320" controls>
+        <source src="./assets/video/estonia.mp4" type="video/mp4" />
+        your browser do not support this type of video.
+      </video>
 
-    <!--Section: footer -->
+      <!--Section: Contacts -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/moqgoypp" method="POST">
+          <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="age">Age : </label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="55"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="website"> Website: </label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              pattern="https?://.+"
+            />
+          </div>
+
+          <div>
+            <label for="subject">Subject: </label>
+            <select name="subject" id="subject">
+              <option value="inquiry">Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="job">Job Opportunity</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Meassage : </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
+
+    <!--footer -->
     <footer>
       <p>Copyright reserved by &copy; Anisul2024</p>
       <p>Developed with &hearts;</p>
       <a href="tel:01710444700"> Call me</a>
       <a href="mailto:anisul@yahoo.co.uk">Email me</a>
+
+      <div>
+        <h3>Follow Me</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/studywithanis" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+              Facebook page
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCEXwc6mNh7Lakj6lX-7a2Mg"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube"></i>
+              YouTube Channel
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/anisul2020/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              Linkedin Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29039.065002157313!2d92.01539544358566!3d24.524126246033823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751bd9a9f1f97d3%3A0x4e6990176487e230!2sKulaura%2C%20Bangladesh!5e0!3m2!1sen!2sfi!4v1717605046578!5m2!1sen!2sfi"
+          title="home map"
+          width="300"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </footer>
   </body>
 </html>
