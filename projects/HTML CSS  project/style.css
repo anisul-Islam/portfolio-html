@@ -1,0 +1,35 @@
+*{
+    font-family: Helvetica;
+}
+
+#header h1{
+    background-image: url(imgage/pattern.jpeg);
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    margin:50px 0;
+    text-align: center;
+}
+.brush h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: mediumspringgreen;
+
+}
+p span{
+    font-weight: bold;
+    color: blue;
+}
+.fram h2{
+    background-color: skyblue;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+}
+.finnish h2{
+    background-color: lightcoral;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}

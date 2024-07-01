@@ -3,36 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font-awesome link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts link here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
+    <style>
+      body {
+        background-color: rgb(249, 248, 248);
+        font-family: "Noto Serif", serif;
+      }
+    </style>
   </head>
   <body>
     <!--Section: navbar -->
+    <header>
     <nav>
       <ul>
         <li>
-          <a href="#about">About Me</a>
+          <a href="#about">Home</a>
         </li>
         <li>
-          <a href="#skills">My Skills</a>
+          <a href="#skills">About Us</a>
         </li>
         <li>
           <a href="#projects">My Projects</a>
         </li>
         <li>
-          <a href="#contact">Contact Me</a>
+          <a href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a href="contact Me">Contact Me</a>
         </li>
       </ul>
     </nav>
+  </header>
 
+  <main>
+    
     <!--Section: intro -->
-    <header id="intro">
-      <h1>Anisul Islam</h1>
+    <section id="intro">
+      <h1>Snigdha Chowdhury</h1>
       <p><em>Web developer and Student of Computer Sceience</em></p>
         <img src="./images/Islamicgirlsdpz_12dd60d2_1642429331494_sc_cmprsd_40.jpg" alt="portfolio-img" height="150" />
      
-
       <hr />
-    </header>
+    </section>
 
     <!--Section: about me -->
     <section id="about">
@@ -41,55 +60,99 @@
       
       
     </section>
+    <br>
 
     <!--Section: Skills -->
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Programming Skills:</h2>
+      <br>
 
       <table border="2" cellpadding="10" cellspacing="0">
         <thead>
           <tr>
-            <th>Technology</th>
+            <th>Languages</th>
             <th>Proficiency</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>HTML</td>
-            <td>Expert</td>
+            <td rowspan="2">Expert</td>
           </tr>
           <tr>
             <td>CSS</td>
-            <td>Expert</td>
           </tr>
           <tr>
             <td>JavaScript</td>
             <td>Intermediate</td>
           </tr>
+          <td>PHP</td>
+          <td>Basic</td>
         </tbody>
       </table>
+    </section>
+    <section id="edu">
+      <h2>Education</h2>
+      <table  border="2" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Degree</th>
+          <th>Achievement</th>
+        </tr>
+      </thead>  
+      <tbody>
+        <tr>
+          <td>Bogura girls high school </td>
+          <td>SSC</td>
+          <td>GPA 3.50</td>
+
+        </tr>
+        <tr>
+         <td>Rangpur girls high school & college</td>
+         <td>HSC</td>
+         <td>GPA 4.75</td>
+        </tr>
+        <tr>
+          <td>Daffodil Polytechnic institute</td>
+          <td>Diploma</td>
+          <td>Runnig</td>
+        </tr>
+      </tbody>
+
+      </table>
+
     </section>
 
     <!--Section: Projects -->
     <section id="projects">
       <h2>Projects</h2>
+      
       <ol>
-        <li>
+        <li>My first fully completed portfolio project:
           <a
             target="_blank"
-            href="https://github.com/snigdhachowdhury/portfolio-html"
-            >portfolio website</a
-          >
+            href="./projects/portfolio project/"
+            >Link here</a><br>
+            <img width="300em" height="250em" src="./images/Screenshot -3.png" alt="porfolio_image">          
         </li>
-        <li>Blog website</li>
-        <li>E-commerce website</li>
+        <br><br>
+
+        <li>Changes colour on mouseclick: <a target="_blank" href="./projects/colour change/">Link here</a><br>
+          <img width="300em" height="250em" src="./images/Screenshot-2.png" alt="colour change">
+        </li><br><br>
+
+        <li>My simple html-css project as a beginner: <a href="./projects/HTML CSS  project/">Link here</a></li>
+        <img width="300em" height="250em" src="./images/Screenshot -1.png" alt="HTML CSS project">
+        <br><br>
       </ol>
     </section>
 
     <!--Section: Contacts -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <form>
+      <form  action="https://formspree.io/f/xjkbbqzg"
+      method="POST">
         <div>
           <label for="name">Name : </label>
           <input type="text" id="name" name="name" required />
@@ -98,6 +161,11 @@
         <div>
           <label for="email">Email : </label>
           <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="subject">Subject :</label>
+          <input type="text" id="subject" name="subject" required>
+          <br>
         </div>
 
         <div>
@@ -108,15 +176,24 @@
         <button type="submit">Submit</button>
         <button type="reset">Clear</button>
       </form>
+      <br>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8598.364782885797!2d90.45756166273856!3d23.830725036884573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c896f5ecf267%3A0x1839bb1f3b52551c!2sPink%20City%20Model%20Town%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1719837156800!5m2!1sen!2sbd"title="Home map" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
     </section>
+  </main>
 
-    <!--Section: footer -->
+    <!-- footer -->
     <footer>
       <hr>
       <p>Copyright reserved by &copy; Snigdha2024</p>
       <p>Developed with &hearts;</p>
+      <i class="fa-solid fa-phone"></i>
       <a href="tel:01710444700"> Call me</a>
+      <i class="fa-solid fa-envelope"></i>
       <a href="mailto:anisul@yahoo.co.uk">Email me</a>
+      <br>
     </footer>
   </body>
 </html>

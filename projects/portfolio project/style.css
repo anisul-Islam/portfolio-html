@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;   
+}
+
+/*------main section-----*/
+html {
+    scroll-behavior: smooth;
+}    
+.main{
+    height: 100vh;
+    width: 100vw;
+    background:url(img/urmi\ pi-2.jpeg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+
+.border{
+    height: 2em;
+    width: 100vw;
+    background-color: #fff;
+}
+
+nav{
+    background-color: #fff;
+    color: rgb(26, 25, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+nav h2{
+    font-size: 3.1em;
+    padding-left:3.2em; 
+    font-family: 'Allison', cursive;
+    color:rgb(240, 10, 29)
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin-right: 3.2em;
+    font-weight: bold; 
+    letter-spacing:0.1em;       
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    position: relative;
+    padding: 0 8px;
+    
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color:rgb(240, 10, 29);
+    height: 0.2em;
+    width: 0;
+    left: 0;
+    bottom: -0.6em;
+    transition: 0.3s;
+}
+nav a:hover:after{
+    width: 100%;
+
+}
+.name{
+    margin-top: 15%;
+    padding-left: 8%;
+    width: 50%;
+
+}
+.name h1{
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+span{
+    color: #fff;
+}
+.name p{
+    color: #fff;
+    line-height: 1.2em;
+    font-size:1.1em;
+    margin-bottom:1em;
+    letter-spacing: 0.1em;
+}
+.name button {
+    background-color: rgb(240, 10, 29);
+    color: #fff;
+    text-decoration: none;
+    border: 0.5em solid transparent;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 3em;
+    transition: .4s;
+    margin: 0 2em;
+}        
+
+.name button a{
+    color:#fff
+}
+.name button a:hover{
+    color:rgb(240, 10, 29);
+
+}
+
+.images{
+    height: 100vh;
+    width: 100vw;
+}
+
+.images img{
+    width: 32vw;
+}
+
+.front{
+    display: flex;
+}
+body{
+    position: relative;
+}
+
+/*------about-----*/
+
+.about h1{
+    font-size: 3.1em;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.about{
+    padding: 3em 0em;
+    width: 100vw;
+    background-color: #eaebee;
+}
+.about img{
+    height: auto;
+    width: 33em;
+    box-shadow: 0 0 1em rgb(73, 53, 53);
+}
+
+.about-text{
+    width:30em;
+}
+
+.aboutbtn{
+    background-color: rgb(240, 10, 29);
+    color: #fff;
+    text-decoration: none;
+    border: 0.5em solid transparent;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 3em;
+    transition: .4s;
+    margin: 0 1em;
+    transform: translateX(1em);
+}
+
+#imgpara{
+    display: flex;
+    width: 60em;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 2em;
+    justify-content: space-around;
+    
+}
+
+.about-text h2{
+    color: black;
+    font-size: 10em;
+    text-transform: capitalize;
+    margin-bottom: 4em;
+
+}
+.about-text p{
+    color: black;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    padding-left: 2em;
+}
+button{
+    background-color: rgb(240, 10, 29);
+    color: #fff;
+    text-decoration: none;
+    border: 0.5em solid transparent;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 3em;
+    transition: .4s;
+    margin: 0 1em;
+    transform: translate(-2em, 0)
+}
+button:hover{
+    background-color: transparent;
+    border: 0.2em solid rgb(240, 10, 29);
+    cursor: pointer;
+    color: black;
+}
+
+/* Education section */
+
+.education {
+    background-color: #eaebee;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    letter-spacing: 0.1em;
+}
+
+.edutext {
+    text-align: center;
+    font-size: 3.5em;
+    transform: translate(0, 0.5em);
+
+}
+
+.allcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    transform: translate(0, 3em);
+}
+
+.institutecard {
+    /* border: 1px solid black; */
+    width: 32em;
+    margin: 1em;
+    height: fit-content;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 2em rgb(73, 53, 53);
+}
+
+.institutename {
+    font-size: 1.7em; 
+    text-align: center;
+    margin: 0.6em 0 0 0;
+    letter-spacing: 0.1em;
+    color: rgb(3, 3, 3);
+}
+
+.institutetext {
+    font-size: 1.1em;
+    padding: 1em;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+/*----contact section----*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #eaebee;
+    color:rgb(10, 10, 10);
+    padding: 5em;
+    text-align: center;
+    font-size:2.5em ;
+    letter-spacing: 0.1em;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 1em 0em;
+}
+.input{
+    padding: 1em;
+    margin: 1em;
+    width: 40em;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1em rgb(73, 53, 53);
+}
+#mag{
+    width: 40em;
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1em rgb(73, 53, 53);
+}
+#send{
+    padding: 1.5em;
+    width: 11em;
+    margin: 3em;
+    border: none;
+    outline: none; 
+    background-color: rgb(240, 10, 29);
+    color: #fff;
+    border-radius: 5em;
+    box-shadow: 0 0 1em rgb(73, 53, 53);
+}
+#send:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.2em solid rgb(240, 10, 29);
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 0 1em rgb(73, 53, 53);
+    transition: .4s;
+}
+
+/*-----footer section-----*/
+
+footer{
+    position: relative;
+    width: 100%;
+    height:25em;
+    background:#57565e;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+footer p:nth-child(1){
+    font-size: 2em;
+    color: white;
+    margin-bottom:0.5em;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    width: 30em;
+    text-align: center;
+    line-height: 1.5em;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 2.3em;
+    height: 2.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(240, 10, 29);
+    border-radius: 50%;
+    margin: 1.5em 0.5em;
+    color:white;
+    text-decoration: none;
+    font-size: 1.4em;
+
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: rgb(240, 10, 29);
+    bottom: 35px;
+    font-size: 1em;
+}
